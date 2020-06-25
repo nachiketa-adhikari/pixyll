@@ -1,7 +1,5 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
+title:       "Nachiketa Adhikari"
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     "/pixyll"
 url:         "https://nachiketa-adhikari.github.io"
