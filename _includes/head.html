@@ -28,13 +28,8 @@
     <link rel="stylesheet" href="{{ "/css/pixyll.css" | relative_url }}?{{ site.time | date: "%Y%m%d%H%M" }}" type="text/css">
 
     <!-- Fonts -->
-    {% if site.extended_fonts %}
-    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic&amp;subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Lato:900,300&amp;subset=latin-ext,latin' rel='stylesheet' type='text/css'>
-    {% else %}
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
-    {% endif %}
+    <link href='//fonts.googleapis.com/css?family=Inter:700,300' rel='stylesheet' type='text/css'>
     {% if site.show_social_icons or site.show_sharing_icons %}
       <link href="//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     {% endif %}
@@ -66,34 +61,7 @@
     <meta property="og:image" content="{{ site.url }}/images/me.jpeg">
     {% endif %}
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
-    {% if site.twitter_username %}
-        <meta name="twitter:site" content="@{{ site.twitter_username }}" />
-        <meta name="twitter:creator" content="@{{ site.twitter_username }}" />
-    {% endif %}
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta name="twitter:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}" />
-    {% if site.post_preview_image %}
-    <meta name="twitter:image" content="{{ site.url }}/images/me.jpeg" />
-    {% endif %}
-
     <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ "/apple-touch-icon-57x57.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ "/apple-touch-icon-114x114.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ "/apple-touch-icon-72x72.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ "/apple-touch-icon-144x144.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ "/apple-touch-icon-60x60.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ "/apple-touch-icon-120x120.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ "/apple-touch-icon-76x76.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/apple-touch-icon-152x152.png" | relative_url }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon-180x180.png" | relative_url }}">
-    <link rel="icon" type="image/png" href="{{ "/favicon-192x192.png" | relative_url }}" sizes="192x192">
-    <link rel="icon" type="image/png" href="{{ "/favicon-160x160.png" | relative_url }}" sizes="160x160">
-    <link rel="icon" type="image/png" href="{{ "/favicon-96x96.png" | relative_url }}" sizes="96x96">
-    <link rel="icon" type="image/png" href="{{ "/favicon-16x16.png" | relative_url }}" sizes="16x16">
-    <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | relative_url }}" sizes="32x32">
     <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
 
     {% if site.google_analytics %}
