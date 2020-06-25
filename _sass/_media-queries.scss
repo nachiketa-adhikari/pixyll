@@ -56,6 +56,12 @@
   }
 }
 
+@media screen and (min-width: $viewport-xl) {
+  html {
+    font-size: 24px;
+  }
+}
+
 @media screen and (min-width: $viewport-large + 14) {
   em img {
     max-width: $measure-width + 14;
