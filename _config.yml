@@ -1,8 +1,8 @@
 # Site settings
 title:       "Nachiketa Adhikari"
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     "/pixyll"
-url:         "https://nachiketa-adhikari.github.io"
+#baseurl:     "/pixyll"
+url:         "http://nachiketa.xyz"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
