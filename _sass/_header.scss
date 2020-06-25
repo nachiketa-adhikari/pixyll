@@ -1,6 +1,7 @@
 .site-header {
   padding-top: $space-1;
   padding-bottom: $space-2;
+  font-family: $heading-font-family;
 }
 
 .site-header a {
@@ -12,7 +13,6 @@
 
 .site-header .site-title {
   font-size: $h2;
-  font-family: $heading-font-family;
 }
 
 .site-nav {
